@@ -26,13 +26,48 @@ h1 {
   align-items: center;
 }
 
-.food-card .product-informations{
+.food-card .product-informations {
+  position: relative;
   margin-bottom: 24px;
 }
+
+.food-card .product-informations button {
+  font-size: 14px;
+  font-weight: 600;
+
+  position: absolute;
+  bottom: 33px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: 160px;
+  height: 44px;
+
+  background-color: white;
+  border: 1px solid #AD8A85;
+  border-radius: 999px;
+
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.food-card .product-informations button img {
+  width: 20px;
+  height: 20px;
+}
+
 .food-card .product-informations img {
-  width: 327px;
+  width: 100%;
   border-radius: 8px;
   margin-bottom: 16px;
+
+  object-fit: cover;
+  display: block;
 }
 
 .food-card .product-informations h5 {

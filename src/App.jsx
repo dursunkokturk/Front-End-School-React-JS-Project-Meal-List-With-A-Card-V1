@@ -1,3 +1,4 @@
+import ShoppingCard from './assets/img/shopping-card.png'
 import { useEffect, useState } from 'react'
 import './App.css'
 
@@ -22,6 +23,10 @@ export default function App() {
       <div className="food-card">
         {recipes.map((recipe) => (
           <div key={recipe.id} className='product-informations'>
+            <button>
+              <img src={ShoppingCard} alt="" />
+              Add to Cart
+            </button>
             <img src={recipe.image} alt="" />
             <h5>{recipe.cuisine}</h5>
             <h4>{recipe.name}</h4>
