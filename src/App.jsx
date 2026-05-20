@@ -17,7 +17,7 @@ export default function App() {
   return (
     <>
       <div className="general-title">
-        <h1>Yemekler</h1>
+        <h1>Meals</h1>
       </div>
       <div className="food-card">
         {recipes.map((recipe) => (
