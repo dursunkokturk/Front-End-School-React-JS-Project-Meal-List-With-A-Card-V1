@@ -59,6 +59,7 @@ h1 {
 .food-card .product-informations button img {
   width: 20px;
   height: 20px;
+  margin-bottom: 1px;
 }
 
 .food-card .product-informations img {
