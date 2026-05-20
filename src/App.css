@@ -8,6 +8,10 @@ body {
   font-family: Red Hat Text;
 }
 
+.container {
+  margin-inline: 24px;
+}
+
 h1 {
   font-weight: 700;
   color: color/rose-900;
@@ -18,7 +22,7 @@ h1 {
 }
 
 .food-card {
-  margin-inline: 24px;
+
 
   display: flex;
   flex-direction: column;

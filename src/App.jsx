@@ -17,21 +17,26 @@ export default function App() {
 
   return (
     <>
-      <div className="general-title">
-        <h1>Meals</h1>
-      </div>
-      <div className="food-card">
-        {recipes.map((recipe) => (
-          <div key={recipe.id} className='product-informations'>
-            <button>
-              <img src={ShoppingCard} alt="" />
-              Add to Cart
-            </button>
-            <img src={recipe.image} alt="" />
-            <h5>{recipe.cuisine}</h5>
-            <h4>{recipe.name}</h4>
-          </div>
-        ))}
+      <div className="container">
+        <div className="general-title">
+          <h1>Meals</h1>
+        </div>
+        <div className="food-card">
+          {recipes.map((recipe) => (
+            <div key={recipe.id} className='product-informations'>
+              <button>
+                <img src={ShoppingCard} alt="" />
+                Add to Cart
+              </button>
+              <img src={recipe.image} alt="" />
+              <h5>{recipe.cuisine}</h5>
+              <h4>{recipe.name}</h4>
+            </div>
+          ))}
+        </div>
+        <div className="order-card">
+          <h2>Your Cart (0)</h2>
+        </div>
       </div>
     </>
   )
