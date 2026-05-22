@@ -25,11 +25,13 @@ export default function App() {
         <div className="food-card">
           {recipes.map((recipe) => (
             <div key={recipe.id} className='product-informations'>
-              <button>
-                <img src={ShoppingCard} alt="" />
-                Add to Cart
-              </button>
-              <img src={recipe.image} alt="" />
+              <div className="image-wrapper">
+                <img src={recipe.image} alt="" />
+                <button>
+                  <img src={ShoppingCard} alt="" />
+                  Add to Cart
+                </button>
+              </div>
               <h5>{recipe.cuisine}</h5>
               <h4>{recipe.name}</h4>
             </div>

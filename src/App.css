@@ -28,12 +28,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 32px;
 }
 
 .container .food-card .product-informations {
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
+}
+
+.container .food-card .product-informations .image-wrapper {
+  position: relative;
+  margin-bottom: 16px;
 }
 
 .container .food-card .product-informations button {
@@ -41,7 +45,7 @@ body {
   font-weight: 600;
 
   position: absolute;
-  bottom: 33px;
+  bottom: -22px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -71,7 +75,7 @@ body {
   width: 327px;
   height: 212px;
   border-radius: 8px;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 
   object-fit: cover;
   display: block;
@@ -80,6 +84,7 @@ body {
 .container .food-card .product-informations h5 {
   font-size: 14px;
   color: #87635A;
+  margin-top: 36px;
 }
 
 .container .food-card .product-informations h4 {
