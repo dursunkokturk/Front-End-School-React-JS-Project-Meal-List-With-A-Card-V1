@@ -131,4 +131,17 @@ body {
     width: 213px;
     height: 212px;
   }
+
+  .container .order-card {
+    margin-inline: 24px;
+    margin-bottom: 64px;
+  }
+
+  .container .order-card h2 {
+    margin-bottom: 24px;
+  }
+
+  .container .order-card .items-card img {
+    padding: 16px 256px 30px 256px;
+  }
 }
