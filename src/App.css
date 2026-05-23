@@ -72,7 +72,7 @@ body {
 }
 
 .container .food-card .product-informations img {
-  width: 327px;
+  width: 100%;
   height: 212px;
   border-radius: 8px;
   /* margin-bottom: 16px; */
@@ -116,19 +116,22 @@ body {
 
 @media(width>767px) {
   .container .food-card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+    align-items: start;
   }
 
   .container .food-card .product-informations {
-    width: 213px;
+    width: auto;
     gap: 24px;
   }
 
+  .container .food-card .product-informations .image-wrapper {
+    width: 100%;
+  }
   .container .food-card .product-informations .image-wrapper .product-photo {
-    width: 213px;
+    width: 100%;
     height: 212px;
   }
 
@@ -147,9 +150,10 @@ body {
 }
 
 @media(width>1109px) {
-  .container{
+  .container {
     margin: 88px 0px;
   }
+
   .container .general-title h1 {
     margin-left: 34px;
   }
@@ -166,7 +170,13 @@ body {
   }
 
   .container .food-card .product-informations {
-    width: 250px;
+    width: calc((100% - 48px) / 3);
+  }
+
+  .container .food-card .product-informations .image-wrapper .product-photo {
+    width: 100%;
+    /* kartın genişliğine uysun */
+    height: 212px;
   }
 
   .container .order-card {
