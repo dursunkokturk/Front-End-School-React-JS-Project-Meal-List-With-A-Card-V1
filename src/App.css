@@ -151,7 +151,9 @@ body {
 
 @media(width>1109px) {
   .container {
-    margin: 88px 0px;
+    max-width: 1440px;
+    margin: 88px auto;
+    padding-inline: 88px;
   }
 
   .container .general-title h1 {
